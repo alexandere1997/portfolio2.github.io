@@ -644,32 +644,6 @@ nav {
   font-style: normal;
 }
 
-.proccess__icon6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: #53d9a2;
-  color: white;
-  border-radius: 50px 50px 200px 200px;
-}
-
-.proccess__icon6 i {
-  color: white;
-  font-size: 3rem;
-  font-style: normal;
-}
-
 .hire {
   background-image: url(../img/hire/hireME.jpg);
   background-repeat: no-repeat;
