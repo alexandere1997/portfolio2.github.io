@@ -78,6 +78,160 @@
   font-weight: bold;
 }
 
+.preloader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.preloader .cssload-tetrominos {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-140px, -120px);
+          transform: translate(-140px, -120px);
+}
+
+.preloader .cssload-tetrominos .cssload-tetromino {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  -webkit-transition: all ease 0.44s;
+  transition: all ease 0.44s;
+  background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat top center;
+}
+
+.preloader .cssload-tetrominos .cssload-box1 {
+  -webkit-animation: cssload-tetromino1 2.18s ease-out infinite;
+          animation: cssload-tetromino1 2.18s ease-out infinite;
+}
+
+@-webkit-keyframes cssload-tetromino1 {
+  0%, 40% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(60px, -34px);
+            transform: translate(60px, -34px);
+  }
+  60%, 100% {
+    -webkit-transform: translate(120px, 0);
+            transform: translate(120px, 0);
+  }
+}
+
+@keyframes cssload-tetromino1 {
+  0%, 40% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(60px, -34px);
+            transform: translate(60px, -34px);
+  }
+  60%, 100% {
+    -webkit-transform: translate(120px, 0);
+            transform: translate(120px, 0);
+  }
+}
+
+.preloader .cssload-tetrominos .cssload-box2 {
+  -webkit-animation: cssload-tetromino2 2.18s ease-out infinite;
+          animation: cssload-tetromino2 2.18s ease-out infinite;
+}
+
+@-webkit-keyframes cssload-tetromino2 {
+  0%, 20% {
+    -webkit-transform: translate(120px, 0px);
+            transform: translate(120px, 0px);
+  }
+  40%, 100% {
+    -webkit-transform: translate(180px, 34px);
+            transform: translate(180px, 34px);
+  }
+}
+
+@keyframes cssload-tetromino2 {
+  0%, 20% {
+    -webkit-transform: translate(120px, 0px);
+            transform: translate(120px, 0px);
+  }
+  40%, 100% {
+    -webkit-transform: translate(180px, 34px);
+            transform: translate(180px, 34px);
+  }
+}
+
+.preloader .cssload-tetrominos .cssload-box3 {
+  -webkit-animation: cssload-tetromino3 2.18s ease-out infinite;
+          animation: cssload-tetromino3 2.18s ease-out infinite;
+}
+
+@-webkit-keyframes cssload-tetromino3 {
+  0% {
+    -webkit-transform: translate(180px, 34px);
+            transform: translate(180px, 34px);
+  }
+  20%, 60% {
+    -webkit-transform: translate(120px, 68px);
+            transform: translate(120px, 68px);
+  }
+  90%, 100% {
+    -webkit-transform: translate(60px, 34px);
+            transform: translate(60px, 34px);
+  }
+}
+
+@keyframes cssload-tetromino3 {
+  0% {
+    -webkit-transform: translate(180px, 34px);
+            transform: translate(180px, 34px);
+  }
+  20%, 60% {
+    -webkit-transform: translate(120px, 68px);
+            transform: translate(120px, 68px);
+  }
+  90%, 100% {
+    -webkit-transform: translate(60px, 34px);
+            transform: translate(60px, 34px);
+  }
+}
+
+.preloader .cssload-tetrominos .cssload-box4 {
+  -webkit-animation: cssload-tetromino4 2.18s ease-out infinite;
+          animation: cssload-tetromino4 2.18s ease-out infinite;
+}
+
+@-webkit-keyframes cssload-tetromino4 {
+  0%, 60% {
+    -webkit-transform: translate(60px, 34px);
+            transform: translate(60px, 34px);
+  }
+  90%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes cssload-tetromino4 {
+  0%, 60% {
+    -webkit-transform: translate(60px, 34px);
+            transform: translate(60px, 34px);
+  }
+  90%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 .sticky.is-sticky {
   position: fixed;
   left: 0;
