@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 .header {
-  background: url("/img/header/turinux-webagency-mobile-smartphone.png") no-repeat center center;
+  background: url(../img/header/turinux-webagency-mobile-smartphone.png) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -671,7 +671,7 @@ nav {
 }
 
 .hire {
-  background-image: url("/img/hire/hireME.jpg");
+  background-image: url(../img/hire/hireME.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
