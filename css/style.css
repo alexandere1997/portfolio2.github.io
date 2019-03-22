@@ -316,7 +316,7 @@ nav {
   height: 30rem;
   -webkit-box-shadow: 14px 18px 51px -10px rgba(0, 0, 0, 0.75);
           box-shadow: 14px 18px 51px -10px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+  border-radius: 52% 48% 84% 16% / 54% 30% 70% 46%;
 }
 
 .information__text {
@@ -375,7 +375,7 @@ nav {
   margin-top: 6rem;
   height: 110px;
   width: 110px;
-  border-radius: 60px;
+  border-radius: 22% 78% 11% 89% / 54% 30% 70% 46%;
 }
 
 .skills__persons .skills__name {
@@ -441,7 +441,7 @@ nav {
   background-color: #fff;
   text-align: center;
   height: 30rem;
-  border-radius: 15px;
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
   -webkit-box-shadow: 0px 0px 109px -19px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 109px -19px rgba(0, 0, 0, 0.75);
 }
@@ -754,14 +754,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider1 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider1 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 278px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -773,8 +779,8 @@ nav {
   width: 278px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -796,14 +802,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider2 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider2 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 400px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -815,8 +827,8 @@ nav {
   width: 400px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -838,14 +850,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider3 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider3 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 278px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -857,8 +875,8 @@ nav {
   width: 278px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -880,14 +898,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider4 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider4 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 200px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -899,8 +923,8 @@ nav {
   width: 200px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -922,14 +946,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider5 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider5 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 390px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -941,8 +971,8 @@ nav {
   width: 390px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -964,14 +994,20 @@ nav {
           align-items: center;
 }
 
+.portfolio__slider6 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
 .portfolio__slider6 .prev {
   background-color: transparent;
   border: 1px solid #35393d;
   width: 240px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
   z-index: 2;
   font-size: 22px;
   color: #000;
@@ -983,8 +1019,8 @@ nav {
   width: 240px;
   height: 36px;
   border-radius: 60px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
   z-index: 2;
   font-size: 22px;
   color: #000;
