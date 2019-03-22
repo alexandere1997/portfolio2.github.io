@@ -69,8 +69,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   font-family: lobster;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 0px, #FFF 0px 0px 0px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 
 .header-shadow .header__text p {
@@ -78,8 +77,7 @@
   font-family: lobster;
   font-size: 1.8rem;
   font-weight: bold;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 0px, #FFF 0px 0px 0px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 
 .preloader {
