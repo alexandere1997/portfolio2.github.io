@@ -1024,6 +1024,54 @@ nav {
   color: #000;
 }
 
+.portfolio__slider7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__slider7 .slick-list {
+  border-radius: 15% 85% 41% 59% / 28% 18% 82% 72%;
+  -webkit-box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+          box-shadow: 1px 3px 15px 7px rgba(0, 0, 0, 0.46);
+}
+
+.portfolio__slider7 .prev {
+  background-color: transparent;
+  border: 1px solid #35393d;
+  width: 240px;
+  height: 36px;
+  border-radius: 60px;
+  -webkit-transform: translateX(138%);
+          transform: translateX(138%);
+  z-index: 2;
+  font-size: 22px;
+  color: #000;
+}
+
+.portfolio__slider7 .next {
+  background-color: transparent;
+  border: 1px solid #35393d;
+  width: 240px;
+  height: 36px;
+  border-radius: 60px;
+  -webkit-transform: translateX(-143%);
+          transform: translateX(-143%);
+  z-index: 2;
+  font-size: 22px;
+  color: #000;
+}
+
 .footer__header {
   margin-top: 5rem;
 }

@@ -409,6 +409,30 @@
                 </div>
               </div>
     <!-- /.row -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="portfolio__slider7">
+            <img src="img/portfolio/Tips4Me/1.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/2.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/3.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/4.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/5.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/6.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/7.png" alt="portfolio">
+            <img src="img/portfolio/Tips4Me/8.png" alt="portfolio">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="portfolio__text wow fadeInLeft" data-wow-delay="0.6s">
+            <h3>Tips4Me </h3>
+            <p>Бесплатный сервис чаевых 
+              с системой отзывов о персонале, рейтингом, 
+              аналитическим модулем и базой резюме.</p>
+           <a href="https://alexandere1997.github.io/Airbnb.github.io/">Смотреть</a>
+          </div>
+      </div>
+    </div>
+<!-- /.row -->
   </div>
   <!-- /.container -->
 </section>
@@ -651,6 +675,34 @@
           ]
         });
         $('.portfolio__slider6').slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: '<button type="submit" class="prev">&#60;</button>',
+          nextArrow: '<button type="submit" class="next">&gt;</button>',
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                adaptiveHeight: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+        $('.portfolio__slider7').slick({
           infinite: true,
           speed: 300,
           slidesToShow: 1,
