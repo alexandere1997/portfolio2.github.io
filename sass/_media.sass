@@ -3,12 +3,41 @@
     img
       width: 25rem
       height: 25rem
+  .nav-item
+    margin-left: 0rem
 @media (max-width: 991px)
+  .nav-item
+    margin-bottom: 3rem
+  li:nth-child(1):after
+    bottom: -57px
+    left: 48px
+  li:nth-child(2):after
+    bottom: -4px
+    left: 38px
+    width: 146px
+  li:nth-child(3):after
+    bottom: -25px
+    left: 34px
+  li:nth-child(4):after
+    bottom: -11px
+    left: 35px
+  li:nth-child(5):after
+    bottom: -77px
+    left: 72px
+    width: 251px
+  li:nth-child(6):after
+    bottom: -24px
+    left: 48px
+  li:nth-child(7):after
+    bottom: -5px
+    left: 48px
   .information__text
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    h5
+      text-align: center
   .skills
     .skills__persons
       .skills__container
@@ -29,6 +58,15 @@
             width: 50px
             height: 50px
 @media (max-width: 575px)
+  .header
+    .header__image
+      img
+        width: 16rem
+    .header__text 
+      h2
+        font-size: 1.5rem
+      p
+        font-size: 1rem;
   .information__img
     img
       width: 15rem
@@ -63,6 +101,9 @@
     &__header
       h3
         font-size: 2.5rem
+    &__text 
+      h3
+        font-size: 1rem
     &__slider1
       margin-bottom: 50px
       margin-top: 50px
