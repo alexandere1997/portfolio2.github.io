@@ -47,7 +47,11 @@
 <body>
   <!--Прелоадер-->
     <div class="preloader" id="preloader">
-       <img src="img/4Mi.gif" alt="preloaderr">
+      <div class="cssload-loader">
+        <div class="cssload-inner cssload-one"></div>
+        <div class="cssload-inner cssload-two"></div>
+        <div class="cssload-inner cssload-three"></div>
+      </div>
     </div>
     <!--Главный экран-->
   <header class="header" id="header">
@@ -154,25 +158,48 @@
         </div>
       </div>
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-          <div class="skills__persons wow rubberBand">
-            <div class="skills__avatar"><img src="img/header/v7Uy43xiFgk-min.jpg" alt="фото2"></div>
-            <div class="skills__name">
-              <h2>ALEXANDER PONZEL</h2>
-            </div>
-            <div class="skills__container">
-              <h4>Skilss</h4>
-              <div class="skills__images">
-                <img src="img/skills/bootstrap.png" alt="фото">
-                <img src="img/skills/css3.png" alt="фото">
-                <img src="img/skills/html5.png" alt="фото">
-                <img src="img/skills/javascript.png" alt="фото">
-                <img src="img/skills/jquery.png" alt="фото">
-                <img src="img/skills/less.png" alt="фото">
-                <img src="img/skills/photoshop.png" alt="фото">
-              </div>
-            </div>
-          </div>
+          <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #e44d26;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e44d26;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="68%">
+            <div class="skillbar-title" style="background: #f7df1e;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #f7df1e;"></div>
+            <div class="skill-bar-percent">68%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="65%">
+            <div class="skillbar-title" style="background: #176eb5;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #176eb5;"></div>
+            <div class="skill-bar-percent">65%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title" style="background: #cd6799;"><span>SASS</span></div>
+            <div class="skillbar-bar" style="background: #cd6799;"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="55%">
+            <div class="skillbar-title" style="background: #fe4445;"><span>GULP</span></div>
+            <div class="skillbar-bar" style="background: #fe4445;"></div>
+            <div class="skill-bar-percent">55%</div>
+          </div> <!-- End Skill Bar -->
+          
+          <div class="skillbar clearfix " data-percent="62%">
+            <div class="skillbar-title" style="background: #61dafb;"><span>React.js</span></div>
+            <div class="skillbar-bar" style="background: #61dafb;"></div>
+            <div class="skill-bar-percent">62%</div>
+          </div> <!-- End Skill Bar -->
           </div>
         </div>
       </div>
@@ -731,11 +758,11 @@
   <script src="js/btnTop.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/PlavniyYkorScroll.js"></script>
-  <script src="js/guidance.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
   <script src="js/preloader.js"></script>
+  <script src="js/skilss.js"></script>
 </body>
 </html>
