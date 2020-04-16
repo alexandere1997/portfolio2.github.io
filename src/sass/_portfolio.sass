@@ -1,0 +1,110 @@
+.portfolio
+  display: flex
+  justify-content: center
+  background-image: linear-gradient(to bottom,#5c2d75,#fec401)
+  height: 100vh
+  transition: 1s
+  transform: translateX(0%)
+  &__container
+    width: 1400px
+  &__header
+    text-align: center
+    h3
+      font-family: RobotoLight
+      font-size: 40px
+      color: #fff
+  &__content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+  &__box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 34px
+  &__items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 10px
+    a
+      width: 250px
+      height: 150px
+      img
+        width: 250px
+        height: 150px
+        transform: rotate3d(7, 12, 8, 30deg)
+        box-shadow: -10px 10px 10px rgba(0,0,0,.5)
+        transition: 0.7s
+        cursor: pointer
+  &__myModal
+    display: none
+    position: fixed
+    z-index: 1
+    padding-top: 200px
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: #000000
+    background-color: rgba(0, 0, 0, 0.1)
+  &__modal-content
+    margin: auto
+    display: block
+    width: 80%
+    max-width: 700px
+  &__caption
+    margin: auto
+    display: block
+    font-family: RobotoLight
+    width: 6%
+    max-width: 700px
+    text-align: center
+    color:#fff
+    text-decoration: none
+    padding: 10px 0
+    height: 150px
+  &__modal-content, &__caption
+    -webkit-animation-name: zoom
+    -webkit-animation-duration: 0.6s
+    animation-name: zoom
+    animation-duration: 0.6s
+  &__close
+    position: absolute
+    top: 130px
+    right: 35px
+    color: #f1f1f1
+    cursor: pointer
+    font-size: 40px
+    font-weight: bold
+    transition: 0.3s
+    &:focus
+      color: #bbb
+      text-decoration: none
+      cursor: pointer
+.portfolio__active
+  transform: rotate3d(0, 0, 0, 0deg)
+  width: 963px
+  height: 564px
+  position: absolute
+  z-index: 1000
+  left: 13%
+@media only screen and (max-width: 700px)
+  .main-featured_box .myModal .modal-content
+    width: 100%
+@-webkit-keyframes zoom
+  from
+    -webkit-transform: scale(0)
+
+  to
+    -webkit-transform: scale(1)
+@keyframes zoom
+  from
+    transform: scale(0)
+
+  to
+    transform: scale(1)

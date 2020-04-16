@@ -1,0 +1,45 @@
+.about
+  display: flex
+  justify-content: center
+  height: 100vh
+  transition: 1s
+  transform: translateX(0%)
+  background: linear-gradient(to bottom,#f55f49,#782d66)
+  &__container
+    width: 1400px
+  &__box
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__text
+    text-align: center
+    h3
+      font-size: 80px
+      font-family: RobotoLight
+      font-weight: bold
+      color: #fff
+    p
+      font-family: RobotoLight
+      font-size: 20px
+      color: #fff
+  &__paralax
+    z-index: 1000
+    margin-top: -514px
+    width: 172px
+    opacity: 0.1
+    position: absolute
+    left: 81px
+    bottom: 466px
+  &__parallax
+    width: 130px
+    position: absolute
+    left: 1200px
+    bottom: 647px
+    opacity: 0.1
+    z-index: 1000

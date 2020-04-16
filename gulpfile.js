@@ -1,26 +1,107 @@
-'use strict';
+"use strict";
 
-global.$ = {
-  gulp: require('gulp'),
-  gp: require('gulp-load-plugins')(),
-  bs: require('browser-sync').create(),
+const gulp = require("gulp");
+const webpack = require("webpack-stream");
+const browsersync = require("browser-sync");
+const sass = require("gulp-sass");
+const autoprefixer = require("autoprefixer");
+const cleanCSS = require("gulp-clean-css");
+const postcss = require("gulp-postcss");
 
-  path: {
-    task: require('./gulp/config/task.js')
-  }
-};
+// const dist = "/Applications/MAMP/htdocs/test"; // Ссылка на вашу папку на локальном сервере
+const dist = "./dist";
 
-$.path.task.forEach(function (taskPath) {
-  require(taskPath)();
+gulp.task("copy-html", () => {
+    return gulp.src("./src/index.html")
+                .pipe(gulp.dest(dist))
+                .pipe(browsersync.stream());
 });
 
+gulp.task("build-sass", () => {
+    return gulp.src("./src/sass/style.sass")
+                .pipe(sass().on('error', sass.logError))
+                .pipe(gulp.dest(dist))
+                .pipe(browsersync.stream());
+});
 
-$.gulp.task('default', $.gulp.series(
-  $.gulp.parallel('pug', 'sass', 'scripts:lib', 'scripts', 'img:dev'),
-  $.gulp.parallel('watch', 'servere')
-));
+gulp.task("build-js", () => {
+    return gulp.src("./src/js/main.js")
+                .pipe(webpack({
+                    mode: 'development',
+                    output: {
+                        filename: 'script.js'
+                    },
+                    watch: false,
+                    devtool: "source-map",
+                    module: {
+                        rules: [
+                          {
+                            test: /\.m?js$/,
+                            exclude: /(node_modules|bower_components)/,
+                            use: {
+                              loader: 'babel-loader',
+                              options: {
+                                presets: [['@babel/preset-env', {
+                                    debug: true,
+                                    corejs: 3,
+                                    useBuiltIns: "usage"
+                                }]]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                }))
+                .pipe(gulp.dest(dist))
+                .on("end", browsersync.reload);
+});
 
-$.gulp.task('build', $.gulp.series(
-  $.gulp.parallel('pug', 'sass', 'scripts:lib', 'scripts', 'img:build'),
-  $.gulp.parallel('watch', 'servere')
-));
+gulp.task("watch", () => {
+    browsersync.init({
+		server: "./dist/",
+		port: 4000,
+		notify: true
+    });
+    
+    gulp.watch("./src/index.html", gulp.parallel("copy-html"));
+    gulp.watch("./src/js/**/*.js", gulp.parallel("build-js"));
+    gulp.watch("./src/sass/**/*.sass", gulp.parallel("build-sass"));
+});
+
+gulp.task("build", gulp.parallel("copy-html", "build-js", "build-sass"));
+
+gulp.task("prod", () => {
+    gulp.src("./src/sass/style.sass")
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([autoprefixer()]))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(dist));
+
+    return gulp.src("./src/js/main.js")
+                .pipe(webpack({
+                    mode: 'production',
+                    output: {
+                        filename: 'script.js'
+                    },
+                    module: {
+                        rules: [
+                          {
+                            test: /\.m?js$/,
+                            exclude: /(node_modules|bower_components)/,
+                            use: {
+                              loader: 'babel-loader',
+                              options: {
+                                presets: [['@babel/preset-env', {
+                                    corejs: 3,
+                                    useBuiltIns: "usage"
+                                }]]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                }))
+                .pipe(gulp.dest(dist));
+});
+
+gulp.task("default", gulp.parallel("watch", "build"));

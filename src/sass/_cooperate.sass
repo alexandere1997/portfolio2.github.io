@@ -1,0 +1,68 @@
+.cooperate
+  display: flex
+  justify-content: center
+  height: 100vh
+  //background: url("../img/hireMe/chernaja_kirpichnaja_stena.jpg")
+  //background-color: #fc6c7c
+  background: linear-gradient(to bottom,#090a21 0,#fc6c7c 100%)
+  transition: 1s
+  transform: translateX(0%)
+  &__container
+    width: 1400px
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 300px
+    height: 300px
+    border-radius: 160px
+    p
+      font-family: ViburRegular
+      font-size: 8.6rem
+      text-align: center
+      line-height: 1
+      color: #c6e2ff
+      width: 800px
+      animation: neon .08s ease-in-out infinite alternate
+    a
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 80px
+      text-align: center
+      font-family: RobotoLight
+      color: #ffffff
+      text-decoration: none
+      font-size: 26px
+      width: 200px
+      height: 100px
+      padding: 10px
+      border: 1px solid #fff
+      transition: 0.4s
+      &:hover
+        background-color: #ffffff
+        color: #000
+  &__paralax
+    width: 100px
+    position: absolute
+    bottom: 1390px
+    left: 140px
+    opacity: 0.1
+  &__parallax
+    width: 130px
+    position: absolute
+    bottom: 2822px
+    left: 1200px
+    opacity: 0.1
+  &__box
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+@keyframes neon
+  from
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92)
+
+  to
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1)
