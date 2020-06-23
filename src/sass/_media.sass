@@ -1,171 +1,99 @@
-@media  ( max-width: 1359px )
-  .header
-    &__container
-      width: 1182px
-    &__connection
-      display: none
-  .about
-    &__paralax
-      display: none
-    &__parallax
-      display: none
-  .cooperate 
-    &__paralax
-      display: none
-    &__parallax
-      display: none
-  .portfolio
-    height: 110vh
+@media ( max-width: 1359px )
+    .portfolio
+        height: auto
+        &__inner
+                grid-template-columns: repeat(3, 1fr);
+    .header
+        &__container
+            width: auto
 @media ( max-width: 1199px )
-  .header
-    &__container
-      width: 975px
-  .process
-    height: 2060px
-    border-radius: 0
-    &__box
-      height: 2060px
-    &__inner
-      flex-direction: column
-      height: 1700px
-      img
-        transform: rotate(90deg)
-  .services
-    height: 1900px
-    &__content
-      flex-direction: column
-      height: 1700px
-    &__box
-      height: 1900px
-  .skills
-    height: 1100px
-  .portfolio
-    height: 133vh
-@media ( max-width: 991px )
-  .header
-    &__container
-        width: 740px
-    &__subtitle
-      font-size: 23px
-    &__link
-      display: none
-    &__line
-      display: flex
-    &__box
-      flex-direction: column
-    &__wrapper
-      height: auto
-    &__name
-      width: 100%
-      a
-        margin: 0 auto
-        margin-bottom: 80px
-    &__content
-      text-align: center
-    &__contain
-      width: 548px
-  .cooperate
-    &__content
-      p
-        width: 468px
-  .footer
-    &__mail
-      flex-direction: column
-      justify-content: center
-      align-items: center
-    &__link
-      flex-wrap: wrap
-@media ( max-width: 835px )
-  .skills
-    height: 1340px
-  .portfolio 
-    height: 175vh
-@media ( max-width: 768px )
-  .liner
-    margin-top: -69px
-@media ( max-width: 757px )
-  .header
-    &__container
-      width: 540px
-    &__subtitle
-      font-size: 16px
-  .portfolio
-    &__content
-      justify-content: center
-    &__items
-      a
-        img
-          width: 250px
-          height: 150px
-  .skills
-    &__inner
-      justify-content: center
-  .about
-    &__container
-      width: 487px
-    &__img
-      img
-        width: 100%
-    &__text
-      h3
-        font-size: 60px
-@media ( max-width: 578px )
-  .skills 
-    height: 2493px
-@media  ( max-width: 575px )
-  .header
-    &__container
-        width: 302px
-    &__title
-      font-size: 35px
-    &__subtitle
-      text-align: center
-    &__box
-      justify-content: flex-end
-    &__name
-      height: 36%
-    &__contain
-      width: 275px
-  .services
-    &__items
-      width: 17rem
-  .about
-    &__text
-      h3
-        font-size: 35px
-      p
-        font-size: 19px
-  .portfolio
-    height: 188vh
-    &__box
-      margin-top: 130px
-    &__items
-      a
-        img
-          width: 250px
-          height: 150px
-  .cooperate
-    &__content
-      p
-        width: 289px
-        font-size: 4.6rem
-  .footer
-    &__header
-      h3
-        font-size: 27px
-      p
-        font-size: 16px
-    &__mail
-      display: flex
-      justify-content: center
-      width: 300px
-    &__phone
-      display: flex
-      justify-content: center
-      width: 300px
-@media  ( max-width: 562px )
-  .skills
-    height: 2480px
-@media  ( max-width: 516px )
-  .portfolio
-    height: 320vh
+    .header
+        height: 808px;
+        &__arrow
+            margin-top: 150px;
+    .about
+        height: 898px;
+    .skills
+        height: 950px;
+    .process
+        height: auto
+        margin-top: 150px
+        &__box
+            height: auto
+        &__inner
+            flex-direction: column
+            img
+                transform: rotate(90deg)
+                padding-top: 20px
+                padding-bottom: 20px
+    .services
+        height: auto
+        margin-top: 200px
+        &__box
+            height: auto
+        &__content
+            flex-direction: column;
+        &__items
+            margin-bottom: 40px
+    .portfolio
+        &__link
+            margin-top: 0px;
+@media ( max-width: 767px )
+    .portfolio
+        &__inner
+                grid-template-columns: repeat(1, 1fr);
+    .header
+        &__box
+            h3
+                font-size: 39px
+            p
+                font-size: 20px
+        &__nav
+            display: none
+        &__on
+            display: block
+    .about
+        &__box
+            h3
+                font-size: 45px
+            p
+                font-size: 17px
+    .skills
+        &__box
+            h3
+                font-size: 45px
+            p
+                font-size: 20px
+        &__title
+            width: 79px
+            font-size: 9px
+        &__clearfix
+            width: 90%
+    .portfolio
+        &__box
+            h3
+                font-size: 45px
+    .process
+        &__box
+            h3
+                font-size: 45px
+    .services
+        &__header
+            h3
+                font-size: 45px
+        &__items
+            width: 16rem;
+    .footer
+        &__container
+            width: auto
+        &__box
+            h3
+                font-size: 45px
+            p
+                font-size: 20px
+        &__links
+            flex-wrap: wrap;
+            width: auto;
+            padding: 10px;
+        &__rotater
+            margin: 10px

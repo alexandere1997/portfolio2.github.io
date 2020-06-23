@@ -1,20 +1,30 @@
-import countSkills from "./modul/countSkills";
-import images from "./modul/images";
-import menu from "./modul/menu";
 import navigation from "./modul/nav";
 import scrolling from "./modul/scrolling";
-import Rellax from "rellax";
+import Visual from "./modul/header__canvas";
+import hover__link from "./modul/hover";
+import "jquery";
+import funcScroll from "./modul/scrollBody";
+import funcSkill from './modul/skill';
+import navBar from "./modul/header__nav";
+import animateScroll from "./modul/animateScroll";
+import funcAdd from "./modul/addPain"
+
+document.body.style.overflow = "hidden";
 
 window.onload = function() {
 	let preloader = document.getElementById('preloader');
-	preloader.style.display = 'none';
+  preloader.style.display = 'none';
+  document.body.style.overflow = "auto";
 };
 window.addEventListener("DOMContentLoaded", () => {
-  countSkills(".skills__one circle:nth-child(2)", ".header__line", ".skills__two circle:nth-child(2)",".skills__fri circle:nth-child(2)",".skills__four circle:nth-child(2)",".skills__five circle:nth-child(2)",".skills__six circle:nth-child(2)",".skills__seven circle:nth-child(2)",".skills__eight circle:nth-child(2)",".skills__number");
-  images(".portfolio__items a img",".portfolio__modal-content", ".portfolio__myModal", ".portfolio__caption", ".portfolio__close");
-  menu(".header__line", ".header__line span", ".header__menu", ".header__menu  a");
+  new Visual();
+  hover__link(".portfolio__link");
+  funcScroll();
   navigation(".header__nav", ".header__link a");
   scrolling(".btn__up");
-  new WOW().init();
-  var rellax = new Rellax('.rellax');
+  funcSkill();
+  navBar(".nav__off", ".nav", ".header__on", ".nav a");
+  animateScroll();
+  funcAdd();
 });
+

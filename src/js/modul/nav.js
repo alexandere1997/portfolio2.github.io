@@ -8,7 +8,7 @@ let navigation = (nav, link) => {
       navBar.style.top = "0px";
     }
     else if(document.documentElement.scrollTop < 58) {
-      navBar.style.top = "-57px";
+      navBar.style.top = "-60px";
     }
   })
 }

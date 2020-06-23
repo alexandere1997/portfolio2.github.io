@@ -21,128 +21,275 @@
       <div class="cssload-inner cssload-three"></div>
     </div>
   </div>
-  <nav class="header__nav">
+  <nav class="nav">
+    <a href="#header">Home</a>
+    <a href="#about">Welcome</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Work</a>
+    <a href="#process">Development</a>
+    <a href="#services">Services</a>
+    <a href="#footer">Contact</a>
+    <p class="nav__off">&times;</p>
+  </nav>
+  <header class="header panel pin-spacer" data-color="darkgray" id="header">
+    <div class="header__nav">
+      <a href="#header">Home</a>
+      <a href="#about">Welcome</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Work</a>
+      <a href="#process">Development</a>
+      <a href="#services">Services</a>
+      <a href="#footer">Contact</a>
+    </div>
+    <div class="header__on">&equiv;</div>
     <div class="header__container">
-      <div class="header__links">
-        <div class="header__logo">
-          <a href="">A</a>
-        </div>
-        <div class="header__link" id="tabNav">
-          <a href="#headder">Главная</a>
-          <a href="#about">Обо мне</a>
-          <a href="#process">Разработка</a>
-          <a href="#portfolio">Портфолио</a>
-          <a href="#skills">Навыки</a>
-          <a href="#services">Услуги</a>
-          <a href="#cooperate">Напиши мне</a>
-          <a href="#footer">Контакты</a>
-        </div>
-        <div class="header__line">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="header__box">
+        <h3>ALEXANDER PONZEL</h3>
+        <p>FRONTEND DEVELOPER, <br>
+          TECHNICIAN OF INFORMATION SYSTEMS</p>
+        <a href="#about" class="header__arrow">
+          <div class="header__lines"></div>
+        </a>
+      </div>
+    </div>
+    <canvas class="header__canvas" id="canvas"></canvas>
+  </header>
+  <section class="about panel" data-color="blue" id="about">
+    <div class="about__container">
+      <div class="about__box">
+        <h3>Welcome</h3>
+        <p>Разработкой сайтов я увлекся более 2 лет назад. <br>
+          И за все это время я никогда не переставал учиться чему-то новому, <br>
+          web-разработка это та отрасль, <br>
+          в которой идет постоянное развитие: появляются новые технологии, <br>
+          совершенствуются принципы и методы построения web-приложений, <br>
+          разрабатываются готовые библиотеки и фреймворки, <br>
+          которые значительно экономят время разработчика, <br>
+          позволяя ему сконцентрироваться на более мелких детялях разработки, <br>
+          что в конечном счете приближает сайт к идеальному. <br>
+          Так же моя основная специализация в области IT "Техник информационных систем"</p> <br>
+      </div>
+    </div>
+  </section>
+  <section class="skills panel" data-color="yellow" id="skills">
+    <div class="skills__container">
+      <div class="skills__box">
+        <h3>My Skills</h3>
+        <p>FRONTEND SKILLS</p>
+        <div class="skills__inner">
+          <div class="skills__clearfix fix1" data-percent="90%">
+            <div class="skills__title" style="background: #f18276;"><span>HTML</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">90%</div>
+          </div>
+          <div class="skills__clearfix fix2" data-percent="88%">
+            <div class="skills__title" style="background: #f18276;"><span>CSS</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">88%</div>
+          </div>
+          <div class="skills__clearfix fix3" data-percent="76%">
+            <div class="skills__title" style="background: #f18276;"><span>JAVASCRIPT</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">76%</div>
+          </div>
+          <div class="skills__clearfix fix4" data-percent="70%">
+            <div class="skills__title" style="background: #f18276;"><span>JQUERY</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">70%</div>
+          </div>
+          <div class="skills__clearfix fix5" data-percent="68%">
+            <div class="skills__title" style="background: #f18276;"><span>REACT.JS</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">68%</div>
+          </div>
+          <div class="skills__clearfix fix6" data-percent="70%">
+            <div class="skills__title" style="background: #f18276;"><span>SASS</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">70%</div>
+          </div>
+          <div class="skills__clearfix fix7" data-percent="60%">
+            <div class="skills__title" style="background: #f18276;"><span>GULP</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">60%</div>
+          </div>
+          <div class="skills__clearfix fix8" data-percent="70%">
+            <div class="skills__title" style="background: #f18276;"><span>FIGMA</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">70%</div>
+          </div>
+          <div class="skills__clearfix fix9" data-percent="65%">
+            <div class="skills__title" style="background: #f18276;"><span>GULP</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">65%</div>
+          </div>
+          <div class="skills__clearfix fix10" data-percent="63%">
+            <div class="skills__title" style="background: #f18276;"><span>PHOTOSHOP</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">63%</div>
+          </div>
+          <div class="skills__clearfix fix11" data-percent="48%">
+            <div class="skills__title" style="background: #f18276;"><span>VUE.JS</span></div>
+            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
+            <div class="skills__percent">48%</div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="header__menu">
-      <a href="#headder">Главная</a>
-      <a href="#about">Обо мне</a>
-      <a href="#process">Разработка</a>
-      <a href="#portfolio">Портфолио</a>
-      <a href="#skills">Навыки</a>
-      <a href="#services">Услуги</a>
-      <a href="#cooperate">Напиши мне</a>
-      <a href="#footer">Контакты</a>
-    </div>
-  </nav>
-  <header class="header act" id="headder">
-      <section class="header__box">
-        <div class="header__contain">
-          <div class="header__wrapper">
-            <div class="header__content">
-              <h3 class="header__title wow fadeInLeft">Alexander Ponzel</h3>
-              <h3 class="header__subtitle wow fadeInLeft" data-wow-delay="0.5s">Frontend developer, <br> TECHNICIAN OF INFORMATION SYSTEMS</h3>
+  </section>
+  <section class="portfolio panel" data-color="gray" id="portfolio">
+    <div class="portfolio__container">
+      <div class="portfolio__box">
+        <h3>Work</h3>
+        <div class="portfolio__inner">
+          <div class="portfolio__links portLink1">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/1.webp" alt="1">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Airbnb.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink2">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/2.webp" alt="2">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/marketplace.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink3">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/3.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Landinge-Page.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink4">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/4.webp" alt="1">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Financial.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink6">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/6.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/africa.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink7">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/7.webp" alt="1">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Contacts.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink8">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/8.webp" alt="2">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/med.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink9">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/9.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/testPsd2.github.io/build/index.html">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink10">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/10.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/music.github.io/">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink11">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/11.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Widget1.github.io/build/index.html">Подробнее</a>
+              <span class="portfolio__line"></span>
+            </div>
+          </div>
+          <div class="portfolio__links portLink12">
+            <div class="portfolio__img">
+              <img src="img/podtfolio/12.webp" alt="3">
+            </div>
+            <div class="portfolio__link">
+              <span class="portfolio__line"></span>
+              <a href="https://alexandere1997.github.io/Rasprodaja.github.io/index.html">Подробнее</a>
+              <span class="portfolio__line"></span>
             </div>
           </div>
         </div>
-        <div class="header__name">
-          <a href="#about" class="header__arrow">
-            <div class="header__lines"></div>
-          </a>
-        </div>
-      </section>
-      <div class="header__connection">
-        <div class="header__messenger">
-          <a href="https://www.skype.com/ru/">Skype</a>
-          <a href="https://t.me/alexPonzel">telegram</a>
-        </div>
-        <div class="header__network">
-          <a href="https://www.instagram.com/aleksandrponzel/?hl=ru"><i class="fa fa-instagram"></i></a>
-          <a href="https://vk.com/id114616813"><i class="fa fa-vk"></i></a>
-          <a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%9F%D0%BE%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/100016797905127"><i class="fa fa-facebook"></i></a>
-        </div>
       </div>
-  </header>
-  <section class="about " id="about">
-    <div class="about__container">
-      <div class="about__box">
-        <div class="about__content">
-          <div class="about__img">
-          </div>
-          <div class="about__text">
-            <h3 class="wow fadeInLeft" data-wow-delay="0.2s">ДОБРО ПОЖАЛОВАТЬ</h3>
-            <span></span>
-            <p class="wow fadeInLeft" data-wow-delay="0.6s">Разработкой сайтов я увлекся более 2 лет назад. <br>
-               И за все это время я никогда не переставал учиться чему-то новому, <br>
-               web-разработка это та отрасль, <br> в которой идет постоянное развитие: появляются новые технологии, <br>
-                совершенствуются принципы и методы построения web-приложений, <br> разрабатываются готовые библиотеки и фреймворки, <br>
-                 которые значительно экономят время разработчика, <br> позволяя ему сконцентрироваться на более мелких детялях разработки, <br>
-                  что в конечном счете приближает сайт к идеальному. <br> Так же моя основная специализация в области IT "Техник информационных систем"</p>
-          </div>
-        </div>
-      </div>
-      <img class="about__paralax rellax" data-rellax-speed="-2" src="img/paralax/html.png" alt="html">
-      <img class="about__parallax rellax" data-rellax-speed="-5" src="img/paralax/css.png" alt="css">
     </div>
   </section>
-  <section class="process " id="process">
+  <section class="process panel" data-color="cornflowerblue" id="process">
     <div class="process__container">
       <div class="process__box">
-        <div class="process__header">
-          <h3 class="wow fadeInLeft" data-wow-delay="0.2s">ПРОЦЕСС РАЗРАБОТКИ</h3>
-          <span></span>
-        </div>
+        <h3>Development</h3>
         <div class="process__content">
           <div class="process__inner">
-            <div class="process__items wow fadeInUp" data-wow-delay="0.3s">
+            <div class="process__items proc__item1">
               <div class="process__icons">
                 <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
               </div>
               <h2>идея</h2>
             </div>
-            <img src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items wow fadeInUp" data-wow-delay="0.4s">
+            <img class="proc__item2" src="img/podtfolio/arrow.png" alt="arrow">
+            <div class="process__items proc__item3">
               <div class="process__icons">
                 <i class="fa fa-cogs" aria-hidden="true"></i>
               </div>
               <h2>КОНЦЕПЦИЯ</h2>
             </div>
-            <img src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items wow fadeInUp" data-wow-delay="0.5s">
+            <img class="proc__item4" src="img/podtfolio/arrow.png" alt="arrow">
+            <div class="process__items proc__item5">
               <div class="process__icons">
                 <i class="fa fa-flask" aria-hidden="true"></i>
               </div>
               <h2>разработка</h2>
             </div>
-            <img src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items wow fadeInUp" data-wow-delay="0.6s">
+            <img class="proc__item6" src="img/podtfolio/arrow.png" alt="arrow">
+            <div class="process__items proc__item7">
               <div class="process__icons">
                 <i class="fa fa-gamepad" aria-hidden="true"></i>
               </div>
               <h2>тест</h2>
             </div>
-            <img src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items wow fadeInUp" data-wow-delay="0.7s">
+            <img class="proc__item8" src="img/podtfolio/arrow.png" alt="arrow">
+            <div class="process__items proc__item9">
               <div class="process__icons">
                 <i class="fa fa-trophy" aria-hidden="true"></i>
               </div>
@@ -153,252 +300,25 @@
       </div>
     </div>
   </section>
-  <section class="portfolio" id="portfolio">
-    <div class="portfolio__container">
-      <div class="portfolio__box">
-        <div class="portfolio__header">
-          <h3 class="wow fadeInLeft" data-wow-delay="0.1s">ПОРТФОЛИО</h3>
-          <span></span>
-        </div>
-        <div class="portfolio__content">
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href="#"><img src="img/podtfolio/1.webp" alt="https://alexandere1997.github.io/Airbnb.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img01" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/2.webp" alt="https://alexandere1997.github.io/marketplace.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img02" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/3.webp" alt="https://alexandere1997.github.io/Landinge-Page.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img03" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/4.webp" alt="https://alexandere1997.github.io/Financial.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img04" src="img/podtfolio/1.webp" alt="img"> 
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/5.webp" alt="https://alexandere1997.github.io/TORTZAKAZ.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img05" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/6.webp" alt="https://alexandere1997.github.io/africa.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img06" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/7.webp" alt="https://alexandere1997.github.io/Contacts.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img07" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/8.webp" alt="https://alexandere1997.github.io/med.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img08" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/9.webp" alt="https://alexandere1997.github.io/testPsd2.github.io/build/index.html" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img09" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/10.webp" alt="https://alexandere1997.github.io/music.github.io/" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img10" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/11.webp" alt="https://alexandere1997.github.io/Widget1.github.io/build/index.html" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img11" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/12.webp" alt="https://alexandere1997.github.io/Rasprodaja.github.io/index.html" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img12" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-          <div class="portfolio__items wow fadeInLeft" data-wow-delay="0.3s">
-            <a href=""><img src="img/podtfolio/13.webp" alt="https://github.com/alexandere1997/testFronted.github.io" data-name="Посмотреть"></a>
-            <div class="portfolio__myModal" style="display: none;">
-              <span class="portfolio__close">×</span>
-              <img class="portfolio__modal-content" id="img13" src="img/podtfolio/1.webp" alt="img">
-              <a class="portfolio__caption" href="" target="_blank">Посмотреть</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="skills " id="skills">
-    <div class="skills__container">
-      <div class="skills__box">
-        <div class="skills__header">
-          <h3 class="wow fadeInLeft" data-wow-delay="0.1s">НАВЫКИ</h3>
-          <span></span>
-        </div>
-        <div class="skills__content">
-          <div class="skills__inner">
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.1s">
-              <div class="skills__percent">
-                <svg class="skills__one">
-                  <circle class="skills__count" cx="70" cy="70" r="70"></circle>
-                  <circle class="skills__count" cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>87<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fa fa-html5" aria-hidden="true"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.2s">
-              <div class="skills__percent">
-                <svg class="skills__two">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>78<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-css3"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.3s">
-              <div class="skills__percent">
-                <svg class="skills__fri">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>70<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-js"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.4s">
-              <div class="skills__percent">
-                <svg class="skills__four">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>65<span>%</span></h2>
-                </div>
-              </div>
-              <img src="img/skill/Jquery.svg" alt=""/>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.5s">
-              <div class="skills__percent">
-                <svg class="skills__five">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>70<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-sass"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.6s">
-              <div class="skills__percent">
-                <svg class="skills__six">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>70<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-gulp"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.7s">
-              <div class="skills__percent">
-                <svg class="skills__seven">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>60<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-react"></i>
-            </div>
-            <div class="skills__skill wow fadeInUp" data-wow-delay="0.8s">
-              <div class="skills__percent">
-                <svg class="skills__eight">
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="skills__number">
-                  <h2>80<span>%</span></h2>
-                </div>
-              </div>
-              <i class="fab fa-bootstrap"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="services  " id="services">
+  <section class="services panel" id="services" data-color="violet" id="services">
     <div class="services__container">
       <div class="services__box">
         <div class="services__header">
-          <h3 class="wow fadeInLeft" data-wow-delay="0.1s">УСЛУГИ</h3>
-          <span></span>
+          <h3>Services</h3>
         </div>
         <div class="services__content">
-          <div class="services__items wow fadeInUp" data-wow-delay="0.2s">
-            <h3>Cайт визитка</h3><i class="fas fa-id-card"></i>
+          <div class="services__items serv__item1">
+            <h3>Cайт визитка</h3><i class="fas fa-id-card" aria-hidden="true"></i>
             <p>от</p><span>6000</span>
             <p>рублей</p><a href="#footer">Заказать</a>
           </div>
-          <div class="services__items wow fadeInUp" data-wow-delay="0.3s">
+          <div class="services__items serv__item2">
             <h3>Лендинг пейдж</h3><i class="fa fa-briefcase" aria-hidden="true"></i>
             <p>от</p><span>10000</span>
             <p>рублей</p><a href="#footer">Заказать</a>
           </div>
-          <div class="services__items wow fadeInUp" data-wow-delay="0.4s">
-            <h3>Сайт компании</h3><i class="fas fa-building"></i>
+          <div class="services__items serv__item3">
+            <h3>Сайт компании</h3><i class="fas fa-building" aria-hidden="true"></i>
             <p>от</p><span>15000</span>
             <p>рублей</p><a href="#footer">Заказать</a>
           </div>
@@ -406,74 +326,51 @@
       </div>
     </div>
   </section>
-  <section class="cooperate " id="cooperate"> 
-    <div class="cooperate__container">
-      <div class="cooperate__box">
-        <div class="cooperate__content">
-          <p>Write me</p>
-          <a href="#footer">Написать</a>
-        </div>
-      </div>
-      <img class="cooperate__paralax rellax" data-rellax-speed="-2" src="img/paralax/js.png" alt="">
-      <img class="cooperate__parallax rellax" data-rellax-speed="-5"  src="img/paralax/sass.png" alt="">
-    </div>
-  </section>
-  <footer class="footer " id="footer">
+  <footer class="footer panel" data-color="green" id="footer">
     <div class="footer__container">
       <div class="footer__box">
-        <div class="footer__header">
-          <h3 class="wow fadeInLeft" data-wow-delay="0.1s">СВЯЖИТЕСЬ СО МНОЙ</h3>
-          <span></span>
-          <p class="wow fadeInLeft" data-wow-delay="0.2s">Выберите удобный способ связи</p>
-        </div>
-        <div class="footer__content">
-          <div class="footer__link">
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="0.1s">
-              <a href="https://vk.com/id114616813"><i class="fa fa-vk"></i></a>
+        <h3>Contact Me</h3>
+        <p>Если вы заинтересованы в работе со мной, пожалуйста, <br>
+           не стесняйтесь связаться со мной и просто сказать привет, <br>
+            затем свяжитесь с нами.</p>
+        <div class="footer__links">
+            <div class="footer__rotater foot__rotate1">
+              <a href="https://vk.com/id114616813"><i class="fa fa-vk" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="footer__rotater foot__rotate2">
               <div class="btn-icon waves-effect waves-light">
-                <a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%9F%D0%BE%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/100016797905127"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%9F%D0%BE%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/100016797905127"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </div>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="0.4s">
-                <a href=""><i class="fa fa-google-plus"></i></a>
+            <div class="footer__rotater foot__rotate3">
+                <a href="tel:+1234567890"><i class="fa fa-phone" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="0.6s">
-                <a href="https://twitter.com/AlexanderPonzel?s=09"><i class="fa fa-twitter"></i></a>
+            <div class="footer__rotater foot__rotate4">
+                <a href="https://twitter.com/AlexanderPonzel?s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="0.8s">
-                <a href="https://ok.ru/profile/555573994336"><i class="fa fa-odnoklassniki"></i></a>
+            <div class="footer__rotater foot__rotate5">
+                <a href="https://ok.ru/profile/555573994336"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="1s">
-                <a href="https://e.mail.ru/messages/inbox/?back=1"><i class="fa fa-at"></i></a>
+            <div class="footer__rotater foot__rotate6">
+                <a href="https://e.mail.ru/messages/inbox/?back=1"><i class="fa fa-at" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="1.2s">
-              <a href="https://github.com/alexandere1997"><i class="fa fa-github"></i></a>
+            <div class="footer__rotater foot__rotate7">
+              <a href="https://github.com/alexandere1997"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
-            <div class="footer__rotater wow fadeInLeft" data-wow-delay="1.4s">
-              <a href="https://www.instagram.com/aleksandrponzel/?hl=ru"><i class="fa fa-instagram"></i></a>
+            <div class="footer__rotater foot__rotate8">
+              <a href="https://www.instagram.com/aleksandrponzel/?hl=ru"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-          </div>
-          <div class="footer__mail">
-            <div class="footer__message wow fadeInLeft" data-wow-delay="0.1s">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a  href="https://e.mail.ru/messages/inbox/?back=1">Sanyi.Ponzel@mail.ru</a>
-            </div>
-            <div class="footer__phone wow fadeInLeft" data-wow-delay="0.1s">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <a href="tel:+79293953350">+79293953350</a>
-            </div>
-          </div>
         </div>
+        <a class="footer__message foot__rotate9" href="https://t.me/alexPonzel">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          Message me
+        </a>
       </div>
-    </div>
+    </>
   </footer>
-
-  <div class="btn__up">
-    <a href="#headder">&and;</a>
+  <div class="btn__up animated fadeIn">
+    <a href="#header">∧</a>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
