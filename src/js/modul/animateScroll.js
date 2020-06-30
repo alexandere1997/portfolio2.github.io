@@ -113,26 +113,6 @@ let animateScroll = () => {
       .from(".proc__item9", { rotate: 360 })
     }
 
-
-/* services */
-    if(document.documentElement.clientWidth < 1199){
-      return
-    }
-    else{
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".services",
-          start: "center center",
-          end: "bottom top",
-          scrub: true,
-          pin: true
-        }
-      })
-      .from(".services__header h3", { x: innerWidth * -1 })
-      .from(".serv__item1", { x : innerWidth * -1, rotate: 360  })
-      .from(".serv__item2", { x : innerWidth * -1, rotate: 360  })
-      .from(".serv__item3", { x : innerWidth * -1, rotate: 360  })
-    }
 /*footer */
 
     if(document.documentElement.clientWidth < 1199){

@@ -18,7 +18,7 @@ let funcScroll = () => {
               });
               $body.addClass('color-' + $(this).data('color'));
             }
-          }); 
+          });
         }
         else {
           $pin.each(function () {

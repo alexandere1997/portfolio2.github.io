@@ -6,6 +6,7 @@ let navigation = (nav, link) => {
   window.addEventListener("scroll", () => {
     if(document.documentElement.scrollTop > 58) {
       navBar.style.top = "0px";
+      console.log(document.documentElement.scrollTop)
     }
     else if(document.documentElement.scrollTop < 58) {
       navBar.style.top = "-60px";
