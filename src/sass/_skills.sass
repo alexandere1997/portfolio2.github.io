@@ -1,0 +1,72 @@
+.skills
+  display: flex
+  justify-content: center
+  //background-color: #f7cf66
+  height: auto
+  &__container
+    width: 1400px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__box
+    width: 100%
+    h3
+      font-family: PacificoRegular
+      font-size: 70px
+      color: #fff
+      font-weight: bold
+      text-align: center
+    p
+      font-family: RobotoLight
+      font-size: 22px
+      color: #fff
+      font-weight: bold
+      text-align: center
+  &__clearfix
+    position: relative
+    display: block
+    margin-bottom: 15px
+    width: 50%
+    background: #eee
+    height: 35px
+    border-radius: 3px
+    transition: 0.4s linear
+    transition-property: width, background-color
+    margin: 0 auto
+    margin-top: 10px
+  &__title
+    position: absolute
+    top: 0
+    left: 0
+    width: 110px
+    font-weight: bold
+    font-size: 13px
+    font-family: RobotoLight
+    color: #ffffff
+    background: #6adcfa
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    span
+      display: block
+      background: rgba(0, 0, 0, 0.1)
+      padding: 0 20px
+      height: 35px
+      line-height: 35px
+      border-top-left-radius: 3px
+      border-bottom-left-radius: 3px
+  &__bar
+    height: 35px
+    width: 0px
+    background: #6adcfa
+    border-radius: 3px
+    transition: 2s
+  &__percent
+    position: absolute
+    right: 10px
+    top: 0
+    font-size: 11px
+    height: 35px
+    line-height: 35px
+    font-family: RobotoLight
+    color: #ffffff
+    color: rgba(0, 0, 0, 0.4)

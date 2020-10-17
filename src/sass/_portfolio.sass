@@ -1,144 +1,59 @@
 .portfolio
-  height: 1133px
   display: flex
-  flex-direction: column
   justify-content: center
   align-items: center
-  &__body
-    height: 896px
-    display: flex
-  &__content
-    display: flex
-    width: 509px
-    height: 896px
-    background: rgba(0, 0, 0, 0.0001)
-    border: 1px solid #4D407C
-    box-sizing: border-box
-  &__sidebar
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 460px
-    height: 841px
-    background: #F2C200
-  &__title
-  &__subtitle
-  &__read
-    font-family: 'Muli', sans-serif
-    font-style: normal
-    font-weight: 600
-    font-size: 16px
-    line-height: 38px
-    text-decoration: none
-    color: #2B2D5C
-    transition: 0.4s
-    &:hover
-      text-decoration: underline
-  &__images
-    display: flex
+  height: auto
+  //background-color: #efeded;
+  &__container
+    width: 1400px
   &__box
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    height: 751px
-  &__links
-    width: 90px
-    display: flex
-    justify-content: center
-  &__link
-    color: #FFCC00
-    font-size: 24px
-  &__holder
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    height: 754px
-    margin-left: 35px
+    width: 100%
+    h3
+      text-align: center
+      font-family: PacificoRegular
+      font-size: 70px
+      color: #2F2F2F
+      font-weight: bold
+  &__img
+    width: 200px
+    height: 100px
+    position: relative
+    z-index: 1000
+    img
+      width: 200px
+      height: 100px
+      filter: grayscale(100%);
   &__inner
-    display: flex
-    justify-content: space-between
-  &__buttons
-    margin-left: -256px
-    margin-top: -108px
-  &__button
-    display: flex
-    justify-content: center
-    align-items: center
-    text-decoration: none
-    border-radius: 38px
-    width: 219px
-    height: 54px
-    background: rgba(0, 0, 0, 0.0001)
-    border: 1px solid #FFCC00
-    font-family: 'Muli', sans-serif
-    font-style: normal
-    font-weight: 600
-    font-size: 16px
-    line-height: 38px
-    text-transform: uppercase
-    color: #F2C200
-    transition: 0.4s
-    &:hover
-      background-color: #ffcc00
-      color: #ffffff
-.title
-.subtitle
-.portfolio__aside
-  display: flex
-  justify-content: center
-  align-items: flex-end
-  background: #2B2D5C
-  mix-blend-mode: normal
-  opacity: 0
-  transition: 0.4s
-  &:hover
-    opacity: 0.65
-  &_one
-    position: absolute
-    width: 370px
-    height: 464px
-  &_two
-    position: absolute
-    width: 370px
-    height: 252px
-    margin-top: 498px
-  &_fri
-    position: absolute
-    width: 471px
-    height: 233px
-  &_four
-    position: absolute
-    width: 165px
-    height: 233px
-    margin-left: 501px
-  &_five
-    position: absolute
-    width: 301px
-    height: 233px
-  &_six
-    position: absolute
-    width: 331px
-    height: 233px
-    margin-left: 335px
-  &_seven
-    position: absolute
-    width: 666px
-    height: 221px
-    margin-top: -225px
-.portfolio__wrap
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  align-items: center
-  height: 232px
-.portfolio__col
-  display: flex
-  flex-direction: column
-  justify-content: space-around
-  align-items: center
-  height: 100px
-.fa
-  &-facebook
-  &-twitter
-  &-instagram
-  &-telegram 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 47px;
+    grid-row-gap: 115px;
+  &__links
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 40px 20px rgba(118,118,118,0.4);
+  &__link
+    width: 200px;
+    margin-top: -100px;
+    height: 100px;
+    background-color: rgba(0,0,0, 0.4);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0
+    z-index: 2000
+    a
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 33px;
+      font-family: RobotoLight
+  &__line
+    display: block
+    width: 170px
+    height: 2px
+    background-color: #ffffff
