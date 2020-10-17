@@ -1,0 +1,82 @@
+.blog
+  height: 1016px
+  background-color: rgb(247, 247, 252)
+  &__body
+    padding-top: 92px
+  &__header
+    text-align: center
+    background-color: rgb(247, 247, 252)
+  &__title
+    margin-top: 0
+    margin-bottom: 0
+  &__subtitle
+  &__row
+    display: flex
+    justify-content: space-around
+    width: 100%
+  &__column
+    background-color: #ffffff
+    height: 598px
+.title
+.subtitle
+.item__blog
+  height: 599px
+  transition: 0.4s
+  &:hover
+    box-shadow: 0 5px 20px 10px rgba(30,30,30,20)
+.item-blog__images
+.item-blog__title
+  font-family: 'Muli', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 20px
+  line-height: 30px
+  color: #2B2D5C
+  margin-top: 22px
+  margin-left: 31px
+.item-blog__date
+  font-family: 'Muli', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 15px
+  line-height: 28px
+  color: #2B2D5C
+  margin-top: 22px
+  margin-left: 31px
+  span
+    font-weight: 300
+.item-blog__text
+  font-family: 'Muli', sans-serif
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 28px
+  color: #595666
+  margin-top: 14px
+  margin-left: 31px
+.item-blog__link
+  font-family: 'Muli', sans-serif
+  text-decoration: none
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 32px
+  position: relative
+  z-index: 2
+  color: #595666
+  margin-left: 31px
+  &::before
+    content: ""
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 95px
+    height: 50%
+    background: #fd0
+    z-index: -1
+    transform: scaleX(1)
+    transition: 0.4s
+  &:hover::before
+    width: 80px
+.blog__column_mod
+  height: 790px

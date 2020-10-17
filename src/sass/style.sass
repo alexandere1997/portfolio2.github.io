@@ -1,9 +1,34 @@
+@import "normalsize"
 @import "fonts"
 @import "header"
 @import "about"
-@import "work"
-@import "skills"
-@import "process"
+@import "happy"
 @import "portfolio"
+@import "blog"
+@import "work"
 @import "footer"
 @import "media"
+
+.active
+  display: flex
+  transition: all 1s linear
+.active__color
+  background-color: #2B2D5C
+  transition: all 1s linear
+.header__fixed
+  display: flex
+  justify-content: space-around
+  align-items: center
+  margin-top: -39px
+  width: 100%
+  left: 3px
+  padding-top: 30px
+  padding-bottom: 30px
+  position: fixed
+  background-color: #2B2D5C
+  z-index: 1000
+  transition: 0.1s
+  z-index: 1000
+  opacity: 0.8
+.header__cross_add 
+  display: none

@@ -1,302 +1,110 @@
-body
-  background-color: #f4f4f4;
-  transition: background-color 0.5s ease;
 .header
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__container
-    width: 1140px
-  &__nav
-    width: 100%
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 60px
-    display: flex
-    justify-content: space-around
-    align-items: center
-    position: fixed;
-    top: -60px;
-    z-index: 3000
-    transition: 0.6s
-    a
-      text-decoration: none
-      color: #fff
-      font-family: PacificoRegular
-      font-size: 20px
-      transition: 0.5s
-      &:hover
-        text-shadow: 1px 1px 6px #FF0505;
-  &__canvas
-    height: 757px
-    width: 100%
-    margin-top: -753px
-    //background-color: #c59ea8;
-  &__arrow
-    border: 2px solid #fff
-    border-radius: 17px
-    height: 50px
-    width: 30px
-    display: block
-    opacity: 1
-    cursor: pointer
-    z-index: 222
-    margin-top: 100px
-  &__lines
-    animation-name: well
-    animation-duration: 1s
-    animation-timing-function: ease-in-out
-    animation-delay: 0s
-    animation-iteration-count: infinite
-    animation-play-state: running
-    position: relative
-    border-radius: 4px
-    background: #fff
-    width: 2px
-    height: 7px
-    margin: auto;
-  &__on
-    display: none
-    color: #ffffff
-    font-size: 70px
-    z-index: 4000
-    position: fixed
-    top: 0
-    right: 10px
-    cursor: pointer;
-  &__box
-    text-align: center
-    height: 753px
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h3
-      color: #fff
-      font-family: PacificoRegular
-      font-size: 72px
-      text-transform: uppercase;
-      z-index: 200
-      text-shadow: 10px 10px 10px #E6E6FF
-    p
-      color: #fff
-      font-family: ExodusPersonalUseStriped;
-      font-size: 34px;
-      font-weight: bold;
-      text-transform: uppercase;
-      z-index: 200
-      text-shadow: 10px 10px 10px #E6E6FF
-@keyframes well
-  0%
-    top: 3px
-    opacity: 0
-  30%
-    top: 10px
-    opacity: 1
-  100%
-    top: 18px
-    opacity: 0
-/* colours */
-.color-darkgray
-  background-color: #005
-.color-blue 
-  background-color: #85d4f9;
-.color-yellow 
-  background-color: #f7cf66;
-.color-gray 
-  background-color: #efeded;
-.color-cornflowerblue 
-  background-color: #3366b5;
-.color-violet 
-  background-color: #330066;
-.color-green 
-  background-color: #5cf4d1;
-.nav
-  display: none;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 7000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  a
-    color: #fff
-    text-decoration: none
-    font-size: 50px
-    font-family: PacificoRegular
-    transition: 0.5s
-    &:hover
-      text-shadow: 1px 1px 6px #FF0505;
-  &__off
-    color: #ffffff
-    font-size: 60px
-    cursor: pointer
-::-webkit-scrollbar 
-    width: 10px; /* ширина для вертикального скролла */
-    height: 8px; /* высота для горизонтального скролла */
-    background-color: rgba(0, 0, 0, 0.1)
-
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb 
-    background-color: #843465;
-    border-radius: 9em;
-    box-shadow: inset 1px 1px 10px #f3faf7;
-
-
-::-webkit-scrollbar-thumb:hover 
-    background-color: #253861;
-.preloader
-  align-items: center
-  background-color:#212227
-  display: flex
-  justify-content: center
-  height: 100%
-  width: 100%
-  position: fixed
-  z-index: 10000
-  img
-    width: 50%
-.cssload-loader
-  position: relative
-  left: calc(0% - 0px)
-  width: 200px
-  height: 200px
-  margin: 130px 0
-  perspective: 780px
-.cssload-inner
-  position: absolute
-  width: 100%
-  height: 100%
-  box-sizing: border-box
-  -o-box-sizing: border-box
-  -ms-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  border-radius: 50%
-  -o-border-radius: 50%
-  -ms-border-radius: 50%
-  -webkit-border-radius: 50%
-  -moz-border-radius: 50%
-  &.cssload-one
-    left: 0%
-    top: 0%
-    animation: cssload-rotate-one 1.15s linear infinite
-    -o-animation: cssload-rotate-one 1.15s linear infinite
-    -ms-animation: cssload-rotate-one 1.15s linear infinite
-    -webkit-animation: cssload-rotate-one 1.15s linear infinite
-    -moz-animation: cssload-rotate-one 1.15s linear infinite
-    border-bottom: 3px solid #5C5EDC
-  &.cssload-two
-    right: 0%
-    top: 0%
-    animation: cssload-rotate-two 1.15s linear infinite
-    -o-animation: cssload-rotate-two 1.15s linear infinite
-    -ms-animation: cssload-rotate-two 1.15s linear infinite
-    -webkit-animation: cssload-rotate-two 1.15s linear infinite
-    -moz-animation: cssload-rotate-two 1.15s linear infinite
-    border-right: 3px solid rgba(76, 70, 101, 0.99)
-  &.cssload-three
-    right: 0%
-    bottom: 0%
-    animation: cssload-rotate-three 1.15s linear infinite
-    -o-animation: cssload-rotate-three 1.15s linear infinite
-    -ms-animation: cssload-rotate-three 1.15s linear infinite
-    -webkit-animation: cssload-rotate-three 1.15s linear infinite
-    -moz-animation: cssload-rotate-three 1.15s linear infinite
-    border-top: 3px solid #e9908a
-@keyframes cssload-rotate-one
-  0%
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
-
-  100%
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
-@-o-keyframes cssload-rotate-one
-  0%
-    -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
-
-  100%
-    -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
-@-ms-keyframes cssload-rotate-one
-  0%
-    -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
-
-  100%
-    -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
-@-webkit-keyframes cssload-rotate-one
-  0%
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
-
-  100%
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
-@-moz-keyframes cssload-rotate-one
-  0%
-    -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
-
-  100%
-    -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
-@keyframes cssload-rotate-two
-  0%
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
-
-  100%
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
-@-o-keyframes cssload-rotate-two
-  0%
-    -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
-
-  100%
-    -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
-@-ms-keyframes cssload-rotate-two
-  0%
-    -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
-
-  100%
-    -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
-@-webkit-keyframes cssload-rotate-two
-  0%
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
-
-  100%
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
-@-moz-keyframes cssload-rotate-two
-  0%
-    -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
-
-  100%
-    -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
-@keyframes cssload-rotate-three
-  0%
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
-
-  100%
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
-@-o-keyframes cssload-rotate-three
-  0%
-    -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
-
-  100%
-    -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
-@-ms-keyframes cssload-rotate-three
-  0%
-    -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
-
-  100%
-    -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
-@-webkit-keyframes cssload-rotate-three
-  0%
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
-
-  100%
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
-@-moz-keyframes cssload-rotate-three
-  0%
-    -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
-
-  100%
-    -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 757px
+	//height: 902px
+	background: url(../img/BG.png)
+	background-repeat: no-repeat
+	background-position: center center
+	//background: linear-gradient(rgba(43, 45, 92, 0.95), rgba(43, 45, 92, 0.95)), url("../images/pexels-photo-432743.png")
+	&__body
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 1270px
+		height: 90vh
+		//height: 828px
+	&__nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__toogle
+		display: none
+		font-size: 37px
+		color: #fff
+		cursor: pointer
+	&__out
+		display: none
+		justify-content: center
+		width: 50%
+		font-size: 37px
+		color: #fff
+		cursor: pointer
+	&__items_active
+		border-bottom: 1px solid yellow
+	&__item
+		display: flex
+		justify-content: space-between
+		width: 338px
+		height: 23px
+	&__items
+		font-family: 'Muli', sans-serif
+		font-style: normal
+		font-weight: 600
+		font-size: 14px
+		text-align: right
+		text-decoration: none
+		color: #FFFFFF
+		transition: 0.4s
+	&__title
+		font-family: 'Trirong', serif
+		font-style: normal
+		font-weight: 300
+		font-size: 60px
+		line-height: 72px
+		align-items: center
+		color: #FFFFFF
+	&__subtitle
+		font-family: 'Muli', sans-serif
+		font-style: normal
+		font-weight: 200
+		font-size: 20px
+		line-height: 32px
+		align-items: center;
+		letter-spacing: 0.1px
+		color: #FFFFFF
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		text-decoration: none
+		border-radius: 36px
+		background: #F2C200
+		font-family: 'Muli', sans-serif
+		font-style: normal
+		width: 224px
+		height: 63px
+		font-weight: normal
+		font-size: 16px
+		line-height: 30px
+		align-items: center
+		color: #2B2D5C
+		transition: 0.4s
+		&:hover
+			color: #000
+			background-color: #ffffff
+	&__links
+		display: flex
+		justify-content: space-between
+		width: 1259px
+		z-index: 1
+	&__box
+		display: flex
+		justify-content: space-between
+		width: 133px
+		height: 23px
+	&__arrow 
+		cursor: pointer
+		animation: bounce 2s infinite linear
+		@keyframes bounce
+			0%, 20%, 50%, 80%, 100%
+				transform: translateY(0)
+			40%
+				transform: translateY(-30px)
+			60%
+				transform: translateY(-15px)
+	&__link
+		color: #ffffff
+	

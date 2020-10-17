@@ -1,84 +1,295 @@
-@media ( max-width: 1359px )
-    .portfolio
-        height: auto
-        &__inner
-                grid-template-columns: repeat(3, 1fr);
-    .header
-        &__container
-            width: auto
-@media ( max-width: 1199px )
-    .header
-        height: 808px;
-        &__arrow
-            margin-top: 150px;
-    .about
-        height: 898px;
-    .skills
-        height: 950px;
-    .process
-        height: auto
-        margin-top: 150px
-        &__box
-            height: auto
-        &__inner
-            flex-direction: column
-            img
-                transform: rotate(90deg)
-                padding-top: 20px
-                padding-bottom: 20px
-    .portfolio
-        &__link
-            margin-top: 0px;
-@media ( max-width: 767px )
-    .portfolio
-        &__inner
-                grid-template-columns: repeat(1, 1fr);
-    .header
-        &__box
-            h3
-                font-size: 39px
-            p
-                font-size: 20px
-        &__nav
-            display: none
-        &__on
-            display: block
-    .about
-        &__box
-            h3
-                font-size: 45px
-            p
-                font-size: 17px
-    .skills
-        &__box
-            h3
-                font-size: 45px
-            p
-                font-size: 20px
-        &__title
-            width: 79px
-            font-size: 9px
-        &__clearfix
-            width: 90%
-    .portfolio
-        &__box
-            h3
-                font-size: 45px
-    .process
-        &__box
-            h3
-                font-size: 45px
-    .footer
-        &__container
-            width: auto
-        &__box
-            h3
-                font-size: 45px
-            p
-                font-size: 20px
-        &__links
-            flex-wrap: wrap;
-            width: auto;
-            padding: 10px;
-        &__rotater
-            margin: 10px
+@media ( max-width: 1581px)
+  .portfolio
+    height: 1800px
+    &__body
+      flex-direction: column
+    &__content
+      margin: 0 auto
+    &__images
+      margin-top: 30px
+    &__buttons
+      margin-top: 773px
+      margin-left: 0
+  .work
+    &__squareOne
+      display: none
+    &__squareTwo
+      display: none
+  .blog
+    height: 2300px
+    &__row
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      height: 2200px
+  .blog__column_mod
+    order: -1
+@media ( max-width: 1300px)
+  .header
+    &__nav
+      justify-content: space-around
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__title
+      text-align: center
+    &__cross
+      display: none
+    &__big
+      display: none
+    &__box
+      justify-content: space-around
+    &__links
+      width: 100%
+      justify-content: space-around
+@media screen and ( max-width: 1199px )
+  .about
+    &__row
+      justify-content: space-around
+      margin-left: 20px
+    &__question
+      margin-left: 20px
+    &__info
+      margin-left: 20px
+  .portfolio
+    height: 3096px
+    &__images
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__inner
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-top: 30px
+      margin-bottom: 30px
+    &__buttons
+      margin-top: 2055px
+  .portfolio__aside_four 
+    margin-left: 0px
+    margin-top: 234px;
+  .portfolio__aside_fri 
+    margin-top: -232px;
+  .portfolio__aside_five
+    margin-top: -232px;
+  .portfolio__aside_six 
+    margin-left: 0px
+    margin-top: 235px;
+@media screen and ( max-width: 991px )
+  .header
+    &__nav
+      margin-top: -38px
+      flex-wrap: wrap
+      padding-bottom: 35px
+    &__item
+      display: none
+    &__toogle
+      display: flex
+      justify-content: center
+      width: 50%
+    &__logo
+      width: 50%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__item
+      flex-direction: column
+      align-items: flex-start
+      width: 70%
+      height: 214px
+      margin-top: 35px
+  .about
+    &__body
+      flex-direction: column
+      width: 100%
+    &__images
+      width: 100%
+      display: flex
+      justify-content: center
+    &__content
+      background: #F7F7FC
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__question
+      text-align: center
+    &__buttons
+      display: flex
+      justify-content: center
+      margin-top: 70px
+    &__button
+      margin-left: 0
+    &__lattice
+      position: absolute
+      transform: translate(2px, 140px)
+      left: auto
+      top: auto
+    &__squareOne
+      transform: translate(217px, 0px)
+      left: auto
+      top: auto
+    &__squareTwo
+      transform: translate(222px, 77px)
+      left: auto
+      top: auto
+    &__squareFri
+      transform: translate(137px, 0px)
+      left: auto
+      top: auto
+    &__subtitle
+      text-align: center
+      margin-bottom: 30px
+  .happy
+    margin-top: 730px
+    &__box
+      flex-wrap: wrap
+  .footer
+    height: 1300px
+    justify-content: space-between
+    &__wrapper
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-top: 700px
+    &__box
+      flex-direction: column
+    &__column
+      text-align: center
+      margin-bottom: 30px
+    &__links
+      width: 203px
+@media screen and ( max-width: 767px )
+  .header
+    &__title
+      font-size: 38px
+    &__subtitle
+      font-size: 14px
+    &__cross
+      left: 327px
+  .portfolio
+    &__picture
+      display: flex
+      justify-content: center
+    &__imgSeven
+      height: 221px
+      width: 360px
+  .portfolio__aside_seven 
+    width: 360px
+    margin-top: 0px
+@media screen and ( max-width: 575px )
+  .header
+    &__body
+      width: 100%
+    &__img
+      width: 144px
+    &__cross
+      display: none
+    &__bigСross
+      display: none
+    &__logo
+      align-items: flex-end
+    &__subtitle
+      font-size: 11px
+      text-align: center
+  .about
+    &__img
+      width: 272px
+      height: 495px
+    &__lattice
+      width: 276px
+    &__squareOne
+      transform: translate(96px, 0px)
+    &__squareTwo
+      transform: translate(101px, 77px)
+    &__squareFri
+      transform: translate(16px, 0px)
+    &__row
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  .happy
+    margin-top: 1028px;
+    &__title
+      margin-bottom: 0
+  .portfolio
+    &__content
+      width: 285px
+    &__sidebar
+      width: 260px
+    &__wrap
+      height: 194px
+    &__imgOne
+      height: 404px
+      width: 296px
+    &__imgTwo
+      height: 252px
+      width: 289px
+    &__imgFri
+      height: 233px
+      width: 264px
+    &__imgFive
+      height: 233px
+      width: 261px
+    &__imgSix
+      height: 233px
+      width: 261px
+    &__imgSeven
+      height: 195px
+      width: 264px
+  .portfolio__aside_one 
+    width: 297px
+    height: 405px
+    z-index: 100
+  .portfolio__aside_two 
+    width: 289px
+    height: 252px
+    z-index: 100
+  .portfolio__aside_fri
+    width: 266px
+    height: 233px
+    z-index: 100
+  .portfolio__aside_five
+    width: 263px
+    z-index: 100
+  .portfolio__aside_six
+    width: 263px
+    z-index: 100
+  .portfolio__aside_seven
+    width: 264px
+    height: 195px
+    z-index: 100
+  .blog
+    height: 2545px
+    &__row
+      height: 2410px
+    &__column
+      width: 279px
+      height: 703px
+  .blog__column_mod
+    height: 936px
+  .item__blog
+    height: 689px
+  .item-blog__images
+    display: flex
+    justify-content: center
+  .item-blog__img
+    height: 241px
+    width: 279px
+  .work
+    &__text
+      width: 242px
+    &__email
+      width: 242px
+    &__field
+      width: 242px
+    &__buttons
+      margin-right: 22px
+      margin-top: 30px
+    &__arrow
+      width: 31px
+      height: 28px

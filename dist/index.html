@@ -1,351 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Александр Понзель Frontend developer, резюме</title>
-  <meta name="description" content="Александр Понзель Frontend developer, резюме">
-  <meta name="keywords" content="мета-теги, шаблон, html, css">
-  <link rel="shortcut icon" href="img/favicon/imgonline-com-ua-Transparent-backgr-k81BejpxgDjU1Oi.png" type="image/jpg">
+  <title>test</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <script src="https://kit.fontawesome.com/5db07b378d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="preloader" id="preloader">
-    <div class="cssload-loader">
-      <div class="cssload-inner cssload-one"></div>
-      <div class="cssload-inner cssload-two"></div>
-      <div class="cssload-inner cssload-three"></div>
-    </div>
-  </div>
-  <nav class="nav">
-    <a href="#header">Home</a>
-    <a href="#about">Welcome</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Work</a>
-    <a href="#process">Development</a>
-    <a href="#services">Services</a>
-    <a href="#footer">Contact</a>
-    <p class="nav__off">&times;</p>
-  </nav>
-  <header class="header panel pin-spacer" data-color="darkgray" id="header">
-    <div class="header__nav">
-      <a href="#header">Home</a>
-      <a href="#about">Welcome</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Work</a>
-      <a href="#process">Development</a>
-      <a href="#services">Services</a>
-      <a href="#footer">Contact</a>
-    </div>
-    <div class="header__on">&equiv;</div>
-    <div class="header__container">
-      <div class="header__box">
-        <h3>ALEXANDER PONZEL</h3>
-        <p>FRONTEND DEVELOPER, <br>
-          TECHNICIAN OF INFORMATION SYSTEMS</p>
-        <a href="#about" class="header__arrow">
-          <div class="header__lines"></div>
-        </a>
+  <header class="header" id="header">
+    <div class="header__body">
+      <div class="header__nav">
+        <div class="header__logo"><img class="header__img" src="img/Logo.png" alt="Logo"></div>
+        <div class="header__toogle">≡</div>
+        <div class="header__out">×</div>
+        <div class="header__item"><a class="header__items header__items_active" href="#header">Home</a><a class="header__items header__items_NoActive" href="#about">About</a><a class="header__items header__items_NoActive" href="#happy">Clients</a><a class="header__items header__items_NoActive" href="#portfolio">Portfolio</a><a class="header__items header__items_NoActive" href="#blog">Blog</a></div>
+      </div>
+      <div class="header__content">
+        <h3 class="header__title">Hello, I'm <br> Dakota Jhonson</h3>
+        <p class="header__subtitle">I’m an Art Director & Photographer based in the San Francisco.</p><a class="header__button button" href="">See My Works</a>
+      </div>
+      <div class="header__links">
+        <div class="header__box"></div>
+        <div class="header__box" id="arroButton"><a href="#about"><img class="header__arrow" src="img/Scroll.png" alt="Arrow"></a></div>
+        <div class="header__box"><a class="header__link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="header__link" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="header__link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="header__link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
       </div>
     </div>
-    <canvas class="header__canvas" id="canvas"></canvas>
   </header>
-  <section class="about panel" data-color="blue" id="about">
-    <div class="about__container">
-      <div class="about__box">
-        <h3>Welcome</h3>
-        <p>Разработкой сайтов я увлекся более 2 лет назад. <br>
-          И за все это время я никогда не переставал учиться чему-то новому, <br>
-          web-разработка это та отрасль, <br>
-          в которой идет постоянное развитие: появляются новые технологии, <br>
-          совершенствуются принципы и методы построения web-приложений, <br>
-          разрабатываются готовые библиотеки и фреймворки, <br>
-          которые значительно экономят время разработчика, <br>
-          позволяя ему сконцентрироваться на более мелких детялях разработки, <br>
-          что в конечном счете приближает сайт к идеальному. <br>
-          Так же моя основная специализация в области IT "Техник информационных систем"</p> <br>
+  <section class="about" id="about">
+    <div class="about__body">
+      <div class="about__images"><img class="about__img" src="img/sergey-zolkin-1045.png" alt="img"><img class="about__squareOne" src="img/about/Rectangle 3 copy.png" alt="squareOne"><img class="about__squareTwo" src="img/about/Rectangle 3 copy 2.png" alt="squareTwo"><img class="about__squareFri" src="img/about/Rectangle 3 copy 3.png" alt="squareFri"><img class="about__lattice" src="img/about/Group 11.png" alt="lattice"></div>
+      <div class="about__content">
+        <div class="about__info">
+          <h3 class="about__title title">About MySelf</h3>
+          <p class="about__subtitle subtitle">Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a briliant Art Director and pro <br> Photographer based in the San Francisco where I make cool things for agencies and brands around <br> globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to <br> our users and integrate their feature requests on a regular basis. If you like my work then please do not <br> hesitate to reach out.</p>
+        </div>
+        <h3 class="about__question">What I Do?</h3>
+        <div class="about__row">
+          <div class="about__column">
+            <div class="item__about">
+              <div class="item-about__title">FASHION</div>
+              <div class="item-about__icon"><img src="img/pete-bellis-189599.png" alt="FASHION"></div>
+            </div>
+          </div>
+          <div class="about__column">
+            <div class="item__about">
+              <div class="item-about__title">PORTRAITS</div>
+              <div class="item-about__icon"><img src="img/henri-meilhac-134082.png" alt="PORTRAITS"></div>
+            </div>
+          </div>
+          <div class="about__column">
+            <div class="item__about">
+              <div class="item-about__title">LIFESTYLE</div>
+              <div class="item-about__icon"><img src="img/pete-bellis-225635 copy 2.png" alt="LIFESTYLE"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about__buttons"><a class="about__button" href="#">View My Flickr Profile</a></div>
       </div>
     </div>
   </section>
-  <section class="skills panel" data-color="yellow" id="skills">
-    <div class="skills__container">
-      <div class="skills__box">
-        <h3>My Skills</h3>
-        <p>FRONTEND SKILLS</p>
-        <div class="skills__inner">
-          <div class="skills__clearfix fix1" data-percent="90%">
-            <div class="skills__title" style="background: #f18276;"><span>HTML</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">90%</div>
-          </div>
-          <div class="skills__clearfix fix2" data-percent="88%">
-            <div class="skills__title" style="background: #f18276;"><span>CSS</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">88%</div>
-          </div>
-          <div class="skills__clearfix fix3" data-percent="76%">
-            <div class="skills__title" style="background: #f18276;"><span>JAVASCRIPT</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">76%</div>
-          </div>
-          <div class="skills__clearfix fix4" data-percent="70%">
-            <div class="skills__title" style="background: #f18276;"><span>JQUERY</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">70%</div>
-          </div>
-          <div class="skills__clearfix fix5" data-percent="68%">
-            <div class="skills__title" style="background: #f18276;"><span>REACT.JS</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">68%</div>
-          </div>
-          <div class="skills__clearfix fix6" data-percent="70%">
-            <div class="skills__title" style="background: #f18276;"><span>SASS</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">70%</div>
-          </div>
-          <div class="skills__clearfix fix7" data-percent="60%">
-            <div class="skills__title" style="background: #f18276;"><span>GULP</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">60%</div>
-          </div>
-          <div class="skills__clearfix fix8" data-percent="70%">
-            <div class="skills__title" style="background: #f18276;"><span>FIGMA</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">70%</div>
-          </div>
-          <div class="skills__clearfix fix9" data-percent="65%">
-            <div class="skills__title" style="background: #f18276;"><span>GULP</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">65%</div>
-          </div>
-          <div class="skills__clearfix fix10" data-percent="63%">
-            <div class="skills__title" style="background: #f18276;"><span>PHOTOSHOP</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">63%</div>
-          </div>
-          <div class="skills__clearfix fix11" data-percent="48%">
-            <div class="skills__title" style="background: #f18276;"><span>VUE.JS</span></div>
-            <div class="skills__bar" style="background: rgb(241,130,118);"></div>
-            <div class="skills__percent">48%</div>
+  <section class="happy" id="happy">
+    <div class="happy__body">
+      <h3 class="happy__title title">Happy Clients</h3>
+      <div class="happy__box"><img class="happy__img" src="img/Happy/1.png" alt="logo1"><img class="happy__img" src="img/Happy/2.png" alt="logo2"><img class="happy__img" src="img/Happy/3.png" alt="logo3"><img class="happy__img" src="img/Happy/4.png" alt="logo4"><img class="happy__img" src="img/Happy/5.png" alt="logo5"><img class="happy__img" src="img/Happy/6.png" alt="logo6"></div>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio__body">
+      <div class="portfolio__content">
+        <div class="portfolio__sidebar">
+          <div>
+            <h3 class="portfolio__title title">Portfolio</h3>
+            <p class="portfolio__subtitle subtitle">The point of using Lorem Ipsum is that it has a non <br>  more-or-less  dik sonormal distri bution of letters, <br> as cliper opposed. a closer look to our fully <br> furnished and beautiful demos, which can be use <br> easily On this find website you can find some <br> pictures I've taken during my travel. a clo <br> look to our fully furnished and so beautful demos, <br> which can be use.</p><a class="portfolio__read" href="">Read More...</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="portfolio panel" data-color="gray" id="portfolio">
-    <div class="portfolio__container">
-      <div class="portfolio__box">
-        <h3>Work</h3>
-        <div class="portfolio__inner">
-          <div class="portfolio__links portLink1">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/1.webp" alt="1">
+      <div class="portfolio__images">
+        <div class="portfolio__box"><img class="portfolio__imgOne" src="img/alexander-andrews-247193.png" alt="alexander-andrews">
+          <div class="portfolio__aside portfolio__aside_one">
+            <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+              <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                <!-- <img-->
+                <div class="portfolio__links">
+                  <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                </div>
+              </div>
             </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Airbnb.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink2">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/2.webp" alt="2">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/marketplace.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
+          </div><img class="portfolio__imgTwo" src="img/anne-edgar-119383.png" alt="anne-edgar">
+          <div class="portfolio__aside portfolio__aside_two">
+            <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+              <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                <div class="portfolio__links">
+                  <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="portfolio__links portLink3">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/3.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Landinge-Page.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink4">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/4.webp" alt="1">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Financial.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink6">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/6.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/africa.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
+        </div>
+        <div class="portfolio__holder">
+          <div class="portfolio__inner"><img class="portfolio__imgFri" src="img/content-14.png" alt="content-14">
+            <div class="portfolio__aside portfolio__aside_fri">
+              <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+                <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                  <div class="portfolio__links">
+                    <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                  </div>
+                </div>
+              </div>
+            </div><img class="portfolio__imgFour" src="img/larm-rmah-46823.png" alt="larm-rmah">
+            <div class="portfolio__aside portfolio__aside_four">
+              <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+                <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                  <div class="portfolio__links">
+                    <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="portfolio__links portLink7">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/7.webp" alt="1">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Contacts.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink8">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/8.webp" alt="2">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/med.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink9">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/9.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/testPsd2.github.io/build/index.html">Подробнее</a>
-              <span class="portfolio__line"></span>
+          <div class="portfolio__inner"><img class="portfolio__imgFive" src="img/clem-onojeghuo-101919.png" alt="clem-onojeghuo">
+            <div class="portfolio__aside portfolio__aside_five">
+              <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+                <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                  <div class="portfolio__links">
+                    <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                  </div>
+                </div>
+              </div>
+            </div><img class="portfolio__imgSix" src="img/sl-home2.png" alt="sl-home2">
+            <div class="portfolio__aside portfolio__aside_six">
+              <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+                <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                  <div class="portfolio__links">
+                    <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="portfolio__links portLink10">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/10.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/music.github.io/">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink11">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/11.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Widget1.github.io/build/index.html">Подробнее</a>
-              <span class="portfolio__line"></span>
-            </div>
-          </div>
-          <div class="portfolio__links portLink12">
-            <div class="portfolio__img">
-              <img src="img/podtfolio/12.webp" alt="3">
-            </div>
-            <div class="portfolio__link">
-              <span class="portfolio__line"></span>
-              <a href="https://alexandere1997.github.io/Rasprodaja.github.io/index.html">Подробнее</a>
-              <span class="portfolio__line"></span>
+          <div class="portfolio__picture"><img class="portfolio__imgSeven" src="img/zara-walker-56626.png" alt="zara-walker">
+            <div class="portfolio__aside portfolio__aside_seven">
+              <div class="portfolio__wrap"><a href=""><img src="img/portfolio/Group 9.png" alt="Job"></a>
+                <div class="portfolio__col"><img src="img/portfolio/share.png" alt="share">
+                  <div class="portfolio__links">
+                    <div class="ya-share2" data-services="facebook,twitter,telegram" data-size="s"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="portfolio__buttons"><a class="portfolio__button" href="">See More</a></div>
   </section>
-  <section class="process panel" data-color="cornflowerblue" id="process">
-    <div class="process__container">
-      <div class="process__box">
-        <h3>Development</h3>
-        <div class="process__content">
-          <div class="process__inner">
-            <div class="process__items proc__item1">
-              <div class="process__icons">
-                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-              </div>
-              <h2>идея</h2>
-            </div>
-            <img class="proc__item2" src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items proc__item3">
-              <div class="process__icons">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-              </div>
-              <h2>КОНЦЕПЦИЯ</h2>
-            </div>
-            <img class="proc__item4" src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items proc__item5">
-              <div class="process__icons">
-                <i class="fa fa-flask" aria-hidden="true"></i>
-              </div>
-              <h2>разработка</h2>
-            </div>
-            <img class="proc__item6" src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items proc__item7">
-              <div class="process__icons">
-                <i class="fa fa-gamepad" aria-hidden="true"></i>
-              </div>
-              <h2>тест</h2>
-            </div>
-            <img class="proc__item8" src="img/podtfolio/arrow.png" alt="arrow">
-            <div class="process__items proc__item9">
-              <div class="process__icons">
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-              </div>
-              <h2>запуск</h2>
-            </div>
+  <section class="blog" id="blog">
+    <div class="blog__body">
+      <div class="blog__row">
+        <div class="blog__column">
+          <div class="item__blog">
+            <div class="item-blog__images"><img class="item-blog__img" src="img/alejandro-lopez-1284.png" alt="alejandro-lopez"></div>
+            <div class="item-blog__title">Design is the method of putting form and <br> content together .</div>
+            <div class="item-blog__date">Life style - <span>July 3, 2017</span></div>
+            <div class="item-blog__text">Sed ut perspiciatis unde omnis iste natus error sit lao <br> hoksi voluptatem lios mukatu accusantium doloremq <br> doisa nojilaudan tium, totam rem aperiam, uni eaque <br> ipsa quae ab cok illo inven tore siva.</div><a class="item-blog__link" href="">Read More</a>
+          </div>
+        </div>
+        <div class="blog__column blog__column_mod">
+          <div class="blog__header">
+            <h3 class="blog__title title">Blog</h3>
+            <p class="blog__subtitle subtitle">The point of using Lorem Ipsum is that it has a non <br>  more-or-less  normal distri bution of letters, as cliper <br> opposed. a closer look to our fully,</p>
+          </div>
+          <div class="item__blog">
+            <div class="item-blog__images"><img class="item-blog__img" src="img/pete-bellis-278587.png" alt="pete-bellis"></div>
+            <div class="item-blog__title">Design is the method of putting form and <br> content together .</div>
+            <div class="item-blog__date">Life style - <span>July 3, 2017</span></div>
+            <div class="item-blog__text">Sed ut perspiciatis unde omnis iste natus error sit lao <br> hoksi voluptatem lios mukatu accusantium doloremq <br> doisa nojilaudan tium, totam rem aperiam, uni eaque <br> ipsa quae ab cok illo inven tore siva.</div><a class="item-blog__link" href="">Read More</a>
+          </div>
+        </div>
+        <div class="blog__column">
+          <div class="item__blog">
+            <div class="item-blog__images"><img class="item-blog__img" src="img/scott-webb-16964.png" alt="scott-webb"></div>
+            <div class="item-blog__title">Design is the method of putting form and <br> content together .</div>
+            <div class="item-blog__date">Life style - <span>July 3, 2017</span></div>
+            <div class="item-blog__text">Sed ut perspiciatis unde omnis iste natus error sit lao <br> hoksi voluptatem lios mukatu accusantium doloremq <br> doisa nojilaudan tium, totam rem aperiam, uni eaque <br> ipsa quae ab cok illo inven tore siva.</div><a class="item-blog__link" href="">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer panel" data-color="green" id="footer">
-    <div class="footer__container">
-      <div class="footer__box">
-        <h3>Contact Me</h3>
-        <p>Если вы заинтересованы в работе со мной, пожалуйста, <br>
-           не стесняйтесь связаться со мной и просто сказать привет, <br>
-            затем свяжитесь с нами.</p>
-        <div class="footer__links">
-            <div class="footer__rotater foot__rotate1">
-              <a href="https://vk.com/id114616813"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate2">
-              <div class="btn-icon waves-effect waves-light">
-                <a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%9F%D0%BE%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/100016797905127"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              </div>
-            </div>
-            <div class="footer__rotater foot__rotate3">
-                <a href="tel:+1234567890"><i class="fa fa-phone" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate4">
-                <a href="https://twitter.com/AlexanderPonzel?s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate5">
-                <a href="https://ok.ru/profile/555573994336"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate6">
-                <a href="https://e.mail.ru/messages/inbox/?back=1"><i class="fa fa-at" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate7">
-              <a href="https://github.com/alexandere1997"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </div>
-            <div class="footer__rotater foot__rotate8">
-              <a href="https://www.instagram.com/aleksandrponzel/?hl=ru"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <a class="footer__message foot__rotate9" href="https://t.me/alexPonzel">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          Message me
-        </a>
+  <section class="work">
+    <div class="work__image"><img class="work__squareOne" src="img/work/Group 12 copy 3.png" alt="Group 12"><img class="work__squareTwo" src="img/work/Group 12 copy 4.png" alt="Group 12"></div>
+    <div class="work__body">
+      <div class="work__box">
+        <h3 class="work__title title">Let's work?</h3>
+        <form class="work__form">
+          <input class="work__text info" name="text" type="text" placeholder="*Your name">
+          <input class="work__email info" name="email" type="email" placeholder="*Your Email">
+          <textarea class="work__field info" name="messeg" id="" cols="30" rows="5" placeholder="Your Massages"></textarea>
+          <input class="work__button info" id="btn" type="submit" value="Send Massage" disabled="">
+        </form>
       </div>
+      <div class="work__buttons">
+        <button class="work__arrow"><img src="img/arrow__work.png" alt="arrow__work"></button>
+      </div>
+      <div class="work__messeg">
+        <div class="work__modal">
+          <h3>&#10004;</h3>
+          <p>форма отправлена успешно</p>
+          <bution class="work__off">OK</bution>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </section>
+  <footer class="footer">
+    <div class="footer__body">
+      <div class="footer__wrapper">
+        <div class="footer__column">
+          <div class="footer__logo"><img src="img/Logo.png" alt="Logo"></div>
+          <div class="footer__contact">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__subtitle">237 Church St, San Francisco, <br> CA 94114, USA <br> nazmulhasanjingar@gmail.com</p>
+          </div>
+          <div class="footer__follow">
+            <div class="footer__title">Follow me on:</div>
+            <div class="footer__links"><a class="footer__link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="footer__link" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="footer__link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="footer__link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__head">Latest Blog Posts</h3>
+          <div class="footer__box">
+            <div class="footer__img"><img src="img/footer/1.jpg" alt="footer"></div>
+            <div class="footer__text">
+              <p class="footer__subtitle">Design is the method of putting form <br> and content together .</p>
+              <p class="footer__subtitle">Life style - <span>July 3, 2017</span></p>
+            </div>
+          </div>
+          <div class="footer__box">
+            <div class="footer__img"><img src="img/footer/2.jpg" alt="footer"></div>
+            <div class="footer__text">
+              <p class="footer__subtitle">Design is the method of putting form <br> and content together .</p>
+              <p class="footer__subtitle">Life style - <span>July 3, 2017</span></p>
+            </div>
+          </div><a class="footer__button" href="">More...</a>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__head">Quick Link</h3>
+          <div class="footer__item"><a class="footer__items" href="#">Home</a><a class="footer__items" href="#">About</a><a class="footer__items" href="#">Clients</a><a class="footer__items" href="#">Portfolio</a><a class="footer__items" href="#">Blog</a></div>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__head">Instagram Update</h3>
+          <div class="footer__container">
+            <div class="footer__row">
+              <div><img src="img/footer/3.jpg" alt="footer"></div>
+              <div class="footer__page"><img src="img/footer/4.jpg" alt="footer"><img src="img/footer/5.jpg" alt="footer"></div>
+            </div>
+            <div class="footer__images"><img src="img/footer/6.jpg" alt="footer"><img src="img/footer/7.jpg" alt="footer"><img src="img/footer/8.jpg" alt="footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__informations">
+      <p class="footer__info">All Rights @ 2017 By Nazmul Hasan Jingar</p>
     </div>
   </footer>
-  <div class="btn__up animated fadeIn">
-    <a href="#header">∧</a>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="https://yastatic.net/share2/share.js"></script>
 </body>
 </html>

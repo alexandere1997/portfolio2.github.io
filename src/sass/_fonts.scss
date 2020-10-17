@@ -1,16 +1,2 @@
-@font-face {
-  font-family: RobotoLight; /* Имя шрифта */////////
-  src: url("fonts/Roboto-Light.ttf"); /* Путь к файлу со шрифтом */
- }
- @font-face{
-   font-family: ExodusPersonalUseStriped;
-   src: url("fonts/Exodus-PersonalUse-Striped.otf");
- }
- @font-face{
-  font-family: PacificoRegular;
-  src: url("fonts/Pacifico-Regular.ttf");
-}
- @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
- i {
-  font-family: fontawesome !important;
-  }
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trirong&display=swap');
