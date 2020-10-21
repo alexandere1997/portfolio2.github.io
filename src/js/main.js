@@ -14,7 +14,7 @@ document.body.style.overflow = "hidden";
 window.onload = function() {
 	let preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
-  document.body.style.overflow = "auto";
+  document.body.style.overflowY = "auto";
 };
 window.addEventListener("DOMContentLoaded", () => {
   new Visual();

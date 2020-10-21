@@ -94,6 +94,7 @@ let animateScroll = () => {
       .from(".portLink21", { x : innerWidth * -1, rotate: 360 })
       .from(".portLink22", { x : innerWidth * -1, rotate: 360 })
       .from(".portLink23", { x : innerWidth * -1, rotate: 360 })
+      .from(".portLink24", { x : innerWidth * -1, rotate: 360 })
     }
       
     /*process*/  
