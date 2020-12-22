@@ -6,6 +6,7 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh
   &__container
     width: 1140px
   &__nav
@@ -28,10 +29,11 @@ body
       &:hover
         text-shadow: 1px 1px 6px #FF0505;
   &__canvas
-    top: 100%;
-    height: 757px
+    position: absolute;
+    bottom: 0vh;
+    height: 101vh;
     width: 100%
-    margin-top: -753px
+    margin-top: -764px;
     object-fit: cover;
   &__arrow
     border: 2px solid #fff
